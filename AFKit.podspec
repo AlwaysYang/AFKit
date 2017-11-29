@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "AFKit"
-  s.version      = "0.0.1"
+  s.version      = "1.0.0"
   s.summary      = "categorys and ."
 
   # This description is used to generate tags and improve search results.
@@ -133,6 +133,7 @@ mmmmmmmmmm
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
+   s.dependency "Masonry"
+s.dependency "MBProgressHUD"
 
 end
