@@ -77,6 +77,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0018BE2A255BC52900087A55 /* AFKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFKit.h; sourceTree = "<group>"; };
 		081A64E38B5CF0E7CF29150C /* libPods-AFKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AFKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8E248FD888B000AA2DE776 /* Pods-AFKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-AFKit/Pods-AFKit.release.xcconfig"; sourceTree = "<group>"; };
 		85605AE67805E6AB6AF92F53 /* Pods-AFKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AFKit/Pods-AFKit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -163,7 +164,6 @@
 		9372DF141FCEB40700F78917 /* UIViewController+AFAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AFAdd.m"; sourceTree = "<group>"; };
 		9372DF161FCEB40700F78917 /* Const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
 		9372DF171FCEB40700F78917 /* Const.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Const.m; sourceTree = "<group>"; };
-		9372DF181FCEB40700F78917 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		93FFC00E1FCE469600E71EE8 /* AFKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93FFC0111FCE469600E71EE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		93FFC0121FCE469600E71EE8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -229,7 +229,7 @@
 			children = (
 				9372DEBF1FCEB40700F78917 /* Base */,
 				9372DF151FCEB40700F78917 /* Const */,
-				9372DF181FCEB40700F78917 /* PrefixHeader.pch */,
+				0018BE2A255BC52900087A55 /* AFKit.h */,
 			);
 			path = AFKit;
 			sourceTree = "<group>";
@@ -442,8 +442,6 @@
 				93FFC00A1FCE469600E71EE8 /* Sources */,
 				93FFC00B1FCE469600E71EE8 /* Frameworks */,
 				93FFC00C1FCE469600E71EE8 /* Resources */,
-				D2C4138EC2A35B98D6E9C3F1 /* [CP] Embed Pods Frameworks */,
-				BD902212453995564984E464 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -462,8 +460,6 @@
 				93FFC0221FCE469600E71EE8 /* Sources */,
 				93FFC0231FCE469600E71EE8 /* Frameworks */,
 				93FFC0241FCE469600E71EE8 /* Resources */,
-				1802FD08FCF8E7B4FB95DC6E /* [CP] Embed Pods Frameworks */,
-				B4543A554787897EDEBC9C30 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -483,8 +479,6 @@
 				93FFC02D1FCE469700E71EE8 /* Sources */,
 				93FFC02E1FCE469700E71EE8 /* Frameworks */,
 				93FFC02F1FCE469700E71EE8 /* Resources */,
-				D0EE1AE140B8C6BC3884913E /* [CP] Embed Pods Frameworks */,
-				6F8E3BB7CA3C02D87F09B934 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -585,21 +579,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1802FD08FCF8E7B4FB95DC6E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AFKitTests/Pods-AFKitTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5ABC2B8618B874AA430E61E2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -618,21 +597,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6F8E3BB7CA3C02D87F09B934 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AFKitUITests/Pods-AFKitUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8DFB08DC6E7E61448D0C34AE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -649,66 +613,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B4543A554787897EDEBC9C30 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AFKitTests/Pods-AFKitTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BD902212453995564984E464 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AFKit/Pods-AFKit-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D0EE1AE140B8C6BC3884913E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AFKitUITests/Pods-AFKitUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D2C4138EC2A35B98D6E9C3F1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AFKit/Pods-AFKit-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
